@@ -1,0 +1,11 @@
+{
+  "name": "com.sametguzeldev.hms.ads",
+  "version": "1.0.0",
+  "displayName": "HMS Ads Kit",
+  "description": "Unity plugin for Huawei Mobile Services Ads Kit. Supports Interstitial, Banner, and Rewarded ads.",
+  "unity": "2021.3",
+  "author": {
+    "name": "Samet Guzel",
+    "email": "sametguzelx@gmail.com"
+  }
+}

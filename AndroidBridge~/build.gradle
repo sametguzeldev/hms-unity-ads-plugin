@@ -1,0 +1,36 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace "com.sametguzeldev.hms.ads.bridge"
+
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 34
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // HMS Ads Lite SDK — compile-only so it is NOT bundled into the AAR.
+    // The HMS SDK must be declared as a runtime dependency in the Unity project's
+    // mainTemplate.gradle (or via the HMS Unity Plugin if available).
+    compileOnly 'com.huawei.hms:ads-lite:13.4.73.301'
+}

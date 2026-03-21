@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // Huawei Maven repository — required for HMS Ads SDK
+        maven { url 'https://developer.huawei.com/repo/' }
+    }
+}
+
+rootProject.name = "hms-ads-bridge"
+include ':app'
