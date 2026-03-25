@@ -61,6 +61,10 @@ Thumbs.db
 .vscode/
 .vs/
 
+# HMS / AppGallery Connect config (project-specific)
+Assets/Plugins/Android/agconnect-services.json
+*.keystore
+
 # Android Gradle build outputs (AndroidBridge~ project)
 AndroidBridge~/build/
 AndroidBridge~/.gradle/

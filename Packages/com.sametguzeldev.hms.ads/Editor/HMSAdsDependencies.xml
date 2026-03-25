@@ -1,0 +1,14 @@
+<dependencies>
+  <androidPackages>
+    <androidPackage spec="com.huawei.hms:ads-lite:13.4.73.301">
+      <repositories>
+        <repository>https://developer.huawei.com/repo/</repository>
+      </repositories>
+    </androidPackage>
+    <androidPackage spec="com.huawei.agconnect:agconnect-core:1.9.1.301">
+      <repositories>
+        <repository>https://developer.huawei.com/repo/</repository>
+      </repositories>
+    </androidPackage>
+  </androidPackages>
+</dependencies>

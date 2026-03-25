@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SametGuzelDev.HMS.Ads.Editor
+namespace SametGuzelDev.HMS.Ads
 {
     /// <summary>
     /// ScriptableObject for configuring HMS Ads ad unit IDs and global settings.

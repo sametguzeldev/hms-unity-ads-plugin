@@ -1,0 +1,22 @@
+{
+  "name": "com.sametguzeldev.hms.ads.tests.runtime",
+  "rootNamespace": "SametGuzelDev.HMS.Ads.Tests.Runtime",
+  "references": [
+    "com.sametguzeldev.hms.ads",
+    "UnityEngine.TestRunner",
+    "UnityEditor.TestRunner"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "nunit.framework.dll"
+  ],
+  "autoReferenced": false,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
