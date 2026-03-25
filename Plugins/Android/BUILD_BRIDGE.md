@@ -1,7 +1,8 @@
-# Building the HMS Ads Bridge AAR
+# Building the HMS Ads Bridge AAR (Developer Reference)
 
-The `hms-ads-bridge.aar` must be compiled from the `AndroidBridge~/` Gradle project before the plugin
-can be used in a Unity Android build.
+The `hms-ads-bridge.aar` is **pre-built and already included** in this directory — Unity users do not
+need to build it. These instructions are for plugin maintainers who need to regenerate the AAR after
+modifying the Java sources in `AndroidBridge~/`.
 
 ## Prerequisites
 

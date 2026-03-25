@@ -21,18 +21,9 @@ Add to your project's `Packages/manifest.json`:
 }
 ```
 
-### Building the Native Bridge
+The pre-compiled `hms-ads-bridge.aar` is included in `Plugins/Android/` — no manual build step is required.
 
-The plugin requires a native Java bridge AAR to adapt HMS abstract listener classes to Unity-compatible interfaces. **Build it once before using the plugin:**
-
-```bash
-cd AndroidBridge~
-./gradlew assembleRelease
-# Output: AndroidBridge~/build/outputs/aar/hms-ads-bridge-release.aar
-cp AndroidBridge~/build/outputs/aar/hms-ads-bridge-release.aar Plugins/Android/hms-ads-bridge.aar
-```
-
-> **Note:** The HMS Ads SDK (`com.huawei.hms:ads-lite`) is fetched from Huawei's Maven repository during the Gradle build. The AAR only contains the bridge classes; the HMS SDK itself must be declared as a dependency in your Unity Android project's `mainTemplate.gradle`.
+> **Note:** The bridge AAR contains only the thin adapter classes. The HMS Ads SDK itself (`com.huawei.hms:ads-lite`) must be declared as a runtime dependency in your Unity project's `mainTemplate.gradle` (see below).
 
 ### mainTemplate.gradle dependency
 
