@@ -1,0 +1,19 @@
+{
+  "name": "HMSAdsDemo",
+  "rootNamespace": "SametGuzelDev.HMS.Ads",
+  "references": [
+    "com.sametguzeldev.hms.ads"
+  ],
+  "includePlatforms": [
+    "Android",
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

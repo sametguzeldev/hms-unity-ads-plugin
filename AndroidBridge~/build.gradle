@@ -31,6 +31,6 @@ android {
 dependencies {
     // HMS Ads Lite SDK — compile-only so it is NOT bundled into the AAR.
     // The HMS SDK must be declared as a runtime dependency in the Unity project's
-    // mainTemplate.gradle (or via the HMS Unity Plugin if available).
+    // mainTemplate.gradle (or via EDM4U if available).
     compileOnly 'com.huawei.hms:ads-lite:13.4.73.301'
 }
