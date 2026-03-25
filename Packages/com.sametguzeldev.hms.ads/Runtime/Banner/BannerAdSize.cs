@@ -1,4 +1,4 @@
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
 using UnityEngine;
 #endif
 
@@ -10,7 +10,7 @@ namespace SametGuzelDev.HMS.Ads
     /// </summary>
     public sealed class BannerAdSize
     {
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
         internal AndroidJavaObject JavaObject { get; }
 
         private BannerAdSize(AndroidJavaObject javaObject)

@@ -1,4 +1,4 @@
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
 using UnityEngine;
 #endif
 
@@ -9,7 +9,7 @@ namespace SametGuzelDev.HMS.Ads
     /// </summary>
     public sealed class AdParam
     {
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
         internal AndroidJavaObject JavaObject { get; }
 
         private AdParam(AndroidJavaObject javaObject)
@@ -26,7 +26,7 @@ namespace SametGuzelDev.HMS.Ads
         /// <summary>Builder for constructing an <see cref="AdParam"/>.</summary>
         public sealed class Builder
         {
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
             private readonly AndroidJavaObject _builder;
 
             /// <summary>Creates a new AdParam builder.</summary>

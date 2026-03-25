@@ -33,7 +33,7 @@ namespace SametGuzelDev.HMS.Ads
         /// </summary>
         public static void Initialize()
         {
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
             if (_initialized) return;
 
             using var hwAds    = new AndroidJavaClass("com.huawei.hms.ads.HwAds");

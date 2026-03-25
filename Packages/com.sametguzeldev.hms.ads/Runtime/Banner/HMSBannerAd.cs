@@ -1,5 +1,5 @@
 using System;
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
 using UnityEngine;
 #endif
 
@@ -48,7 +48,7 @@ namespace SametGuzelDev.HMS.Ads
         /// <summary>Fired on the Unity main thread when the user leaves the app via the banner.</summary>
         public event Action OnAdLeave;
 
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
         private AndroidJavaObject _bannerView;
         private BannerAdListener _listener;
         private bool _disposed;

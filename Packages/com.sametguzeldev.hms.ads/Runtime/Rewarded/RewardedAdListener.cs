@@ -1,5 +1,6 @@
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
 using System;
+using UnityEngine;
 using UnityEngine.Scripting;
 
 namespace SametGuzelDev.HMS.Ads

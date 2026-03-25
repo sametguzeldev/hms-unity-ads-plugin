@@ -1,5 +1,5 @@
 using System;
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
 using UnityEngine;
 #endif
 
@@ -11,7 +11,7 @@ namespace SametGuzelDev.HMS.Ads
     /// </summary>
     public abstract class JavaObjectWrapper : IDisposable
     {
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
         /// <summary>The underlying Android Java object.</summary>
         protected AndroidJavaObject JavaObject { get; private set; }
 

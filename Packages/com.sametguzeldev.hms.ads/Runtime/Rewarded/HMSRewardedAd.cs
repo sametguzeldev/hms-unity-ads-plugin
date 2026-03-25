@@ -1,5 +1,5 @@
 using System;
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
 using UnityEngine;
 #endif
 
@@ -39,7 +39,7 @@ namespace SametGuzelDev.HMS.Ads
         /// <summary>Fired on the Unity main thread when the ad fails to display. HMS error code is passed.</summary>
         public event Action<int> OnAdFailedToShow;
 
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
         private AndroidJavaObject _rewardAd;
         private RewardAdLoadListener _loadListener;
         private RewardAdStatusListener _statusListener;
